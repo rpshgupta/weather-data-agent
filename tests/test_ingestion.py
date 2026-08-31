@@ -1,4 +1,4 @@
-from weather_agent.ingestion import fetch_weather
+from weather_data_agent.ingestion import fetch_weather
 
 
 def test_fetch_weather():
