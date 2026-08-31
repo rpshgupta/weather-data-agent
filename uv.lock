@@ -259,20 +259,20 @@ name = "weather-data-agent"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
-    { name = "pyspark" },
     { name = "requests" },
 ]
 
 [package.dev-dependencies]
 dev = [
+    { name = "pyspark" },
     { name = "pytest" },
 ]
 
 [package.metadata]
-requires-dist = [
-    { name = "pyspark", specifier = ">=4.2.0" },
-    { name = "requests", specifier = ">=2.34.2" },
-]
+requires-dist = [{ name = "requests", specifier = ">=2.34.2" }]
 
 [package.metadata.requires-dev]
-dev = [{ name = "pytest", specifier = ">=9.1.1" }]
+dev = [
+    { name = "pyspark", specifier = ">=4.2.0" },
+    { name = "pytest", specifier = ">=9.1.1" },
+]

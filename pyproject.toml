@@ -5,7 +5,6 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "pyspark>=4.2.0",
     "requests>=2.34.2",
 ]
 
@@ -18,5 +17,6 @@ build-backend = "uv_build"
 
 [dependency-groups]
 dev = [
+    "pyspark>=4.2.0",
     "pytest>=9.1.1",
 ]
